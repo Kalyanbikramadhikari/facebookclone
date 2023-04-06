@@ -10,21 +10,21 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const Navbar = () => {
   return (
-    <div className='  p-2 flex shadow-md fixed w-full bg-white z-50' >
+    <div className='  px-2 flex shadow-md fixed w-full bg-white z-50' >
         {/* left */}
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 ">
           <div className=' flex cursor-pointer '>
             <i className="fa-brands fa-facebook text-4xl text-blue-600"></i>
           </div>
          
-          <div className="flex items-center p-2 space-x-1 rounded-3xl bg-gray-200 hidden sm:inline-flex">
+          <div className="flex items-center p-2 space-x-1 rounded-3xl bg-gray-100 hidden sm:inline-flex">
             <i class="fa-sharp fa-solid fa-magnifying-glass text-gray-400 "></i>
             <input className='hidden md:inline-flex bg-transparent outline-none ' type="text" placeholder='Search Facebook' />
           </div>
         </div>
 
         {/* middle */}
-        <div className='flex text-xl items-center justify-center grow p-0 hover:cursor-pointer'>
+        <div className='flex text-xl items-center justify-center grow shrink-0 p-0 hover:cursor-pointer '>
           <div className='text-blue-500 border-b-2 border-b-blue-400 px-4  lg:px-10 m-0 flex hover:border-b-2 border-b-blue-400 hover:text-blue-500'>
           <i class="fa-solid fa-house  text-2xl"></i>
 
@@ -46,8 +46,9 @@ const Navbar = () => {
           </div>
         </div>
         {/* right */}
-        <div className='flex text-xl lg:basis-1/4 items-center grow-0.8 justify-end lg:px-3 sm:space-x-2 text-gray-500 hover:cursor-pointer'>
-        <p className='text-black'>Kalyan <span className='hidden md:inline-flex'>Bikram</span> </p>
+        <div className='flex text-xl lg:basis-1/4 items-center  justify-end lg:px-3 sm:space-x-2 text-gray-500 hover:cursor-pointer'>
+          {/*  bg-yellow-100 */}
+        <p className='text-black inline-flex'>Kalyan <span className='hidden lg:inline-flex'>Bikram</span> </p>
           <div>
         <AppsRoundedIcon  className='hidden lg:inline-flex text-3xl flex  rounded-full px-1 bg-gray-200'/>
 
