@@ -36,7 +36,7 @@ const Stories = ({profile , src}) => {
   return (
     <div className='flex   relative  hover:transition-all'>
       <div className=' hidden lg:inline-flex absolute top-1  left-1  b object-cover'>
-        <img src={src} alt="" className='h-10 w-10 rounded-full border-2 border-blue-600'/>
+        <img src={src} alt="" className='h-10 w-10 rounded-full border-2 border-blue-600 object-cover'/>
       </div>
       <div className='flex  object-cover '>
       

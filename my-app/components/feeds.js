@@ -3,6 +3,7 @@ import Stories from './stories'
 import VideoCameraFrontRoundedIcon from '@mui/icons-material/VideoCameraFrontRounded';
 import PhotoLibraryRoundedIcon from '@mui/icons-material/PhotoLibraryRounded';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
+import Posts from './Posts';
 
 
 const profile_data = [
@@ -41,10 +42,10 @@ profile:'https://images.unsplash.com/photo-1596392927852-2a18c336fb78?ixlib=rb-4
 const Feeds = () => {
   return (
     <div className='ml-4 lg:ml-0'>
-    
+      {/* stoies div */}
       <div className=' flex-grow-0  flex-col lg:h-64 relative  lg:ml-28 mt-3 bg-white rounded-md'>
         
-          {/* stories and reels text */}
+          
           <div className='flex  h-14   p-3 rounded-t-md '>
           
             <div className='bg-blue-50 flex-grow px-0 text-blue-500 flex items-center space-x-2 justify-center text-lg border-b-2 border-blue-500'>
@@ -57,7 +58,6 @@ const Feeds = () => {
             </div>
           </div>
 
-        {/* stories section */}
           <div className="flex flex-grow-0 p-3  space-x-3 ">
             
             
@@ -70,30 +70,34 @@ const Feeds = () => {
           </div>
           
       </div>
-
+        {/* input box */}
       <div className=' flex-grow-0 p-2 px-3  flex-col h-24 relative flex lg:ml-28 mt-3 bg-white rounded-md'>
         <div className='flex   space-x-3'>
-          <img className='h-10 w-10 rounded-full' src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt=""/>
+          <img className='h-10 w-10 rounded-full object-cover' src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt=""/>
           <input className='bg-gray-100 px-4 flex grow rounded-full' type="text" placeholder="What's on your mind, Kalyan?" name="" value=""/>
         </div>
         <hr className='mt-2'/>
         <div className='flex items-center justify-center mt-1'>
           <div className='flex grow justify-center space-x-1 items-center '>
           <VideoCameraFrontRoundedIcon className='text-3xl text-red-600'/>
-          <span className='hidden lg: inline-flex text-gray-400 text-sm '><b>Live video</b></span>
+          <span className='  '><b className='hidden lg:inline-flex text-gray-400 text-sm'>Live video</b></span>
           </div>
           
           <div className='flex grow justify-center items-center space-x-1 '>
           <PhotoLibraryRoundedIcon className='text-3xl text-green-600'/>
-          <span className='hidden lg: inline-flex text-gray-400 text-sm '><b>Photo/video</b></span>
+          <span className='hidden lg:inline-flex text-gray-400 text-sm '><b>Photo/video</b></span>
 
           </div>
           <div className='flex grow justify-center items-center space-x-1 '>
           <EmojiEmotionsOutlinedIcon className='text-3xl text-yellow-500'/>
-          <span className='hidden lg: inline-flex text-gray-400 text-sm '><b>Feeling/activity</b></span>
+          <span className='hidden lg:inline-flex text-gray-400 text-sm '><b>Feeling/activity</b></span>
 
           </div>
         </div>
+      </div>
+
+      <div className='flex-grow-0  flex-col   flex lg:ml-28 mt-3 rounded-md'>
+        <Posts/>
       </div>
 
     </div>

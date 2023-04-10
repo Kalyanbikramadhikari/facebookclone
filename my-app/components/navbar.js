@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className='flex items-end'>
           <i class=" hidden lg:inline-flex  fa-solid fa-angle-down text-2xl px-1.5  rounded-full bg-gray-200"></i>
           </div>
-
+      
         </div>
     </div>
 

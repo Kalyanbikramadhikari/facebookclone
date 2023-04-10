@@ -9,7 +9,7 @@ import Feeds from '../../components/feeds'
 
 export default function Home() {
   return (
-    < div className='bg-gray-100 h-screen '>
+    < div className='bg-gray-100 h-auto '>
       <Head>
         <title>Facebook </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
@@ -23,7 +23,7 @@ export default function Home() {
         <div className=' '>
           <Sidebar/>
         </div>
-        <div className=' flex grow justify-start  '>
+        <div className=' flex grow justify-start  bg-gray-100 mb-2'>
           {/* bg-green-100 */}
           <Feeds/>
           
