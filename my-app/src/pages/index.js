@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar'
 import Sidebar from '../../components/sidebar'
 import { Feed } from '@mui/icons-material'
 import Feeds from '../../components/feeds'
+import RightSide from '../../components/rightside'
 // import { Inter } from 'next/font/google'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -28,9 +29,11 @@ export default function Home() {
           <Feeds/>
           
         </div>
-        {/* <div className='basis-1/4'>
-          news and onlies
-        </div> */}
+
+        {/* sponsored and online section */}
+        <div className='flex hidden flex-col md:inline-flex mt-2 ml-20'>
+          <RightSide/>
+        </div>
       </div>      
         
         
