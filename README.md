@@ -1,7 +1,8 @@
 # Facebook Clone 📘
 The Facebook clone project replicates the renowned social media platform, Facebook. The frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.
 
-
+## Screenshot of project
+![Fbclone!](https://github.com/Kalyanbikramadhikari/facebookclone/assets/74446184/4d663ec3-342f-4fe9-a083-ae5f2b29b7a0)
 
 ## 🛠️ Installation
 
